@@ -98,6 +98,14 @@ main {
   box-shadow: 0 8px 20px rgba(255, 51, 51, 0.35);
 }
 
+/* Iframe for Suggestions */
+#suggestions iframe {
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
+}
+
 /* Footer */
 footer {
   text-align: center;
