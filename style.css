@@ -1,79 +1,97 @@
-/* Base */
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
   background: #0f0f0f;
-  color: #fff;
-  text-align: center;
+  color: #ffffff;
 }
 
 /* Header */
 header {
-  padding: 60px 20px;
-  background: #111;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 header h1 {
   font-size: 3rem;
-  margin: 0;
-  color: #ff3333;
 }
 
 header p {
+  opacity: 0.8;
   margin-top: 8px;
-  font-size: 1.2rem;
-  color: #ddd;
 }
 
-/* Video */
-.video {
-  padding: 50px 20px;
-}
-
-iframe {
-  width: 90%;
-  max-width: 720px;
-  height: 405px;
-  border-radius: 10px;
-}
-
-/* Social links */
-.socials .links {
+/* Tabs */
+.tabs {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
-.btn {
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
+.tab {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  cursor: pointer;
   font-weight: bold;
-  width: 240px;
+  transition: background 0.2s, transform 0.1s;
 }
 
-.yt {
-  background: #ff0000;
+.tab:hover {
+  transform: translateY(-2px);
 }
 
-.sp {
-  background: #1DB954;
+.tab.active {
+  background: #ff3333;
 }
 
-/* About */
-.about {
+/* Content */
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tab-content {
+  display: none;
   padding: 40px 20px;
-  font-size: 1rem;
-  color: #ddd;
+  text-align: center;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h2 {
+  margin-bottom: 20px;
+}
+
+.tab-content p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Media embeds */
+iframe {
+  width: 95%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 14px;
+  border: none;
 }
 
 /* Footer */
 footer {
-  padding: 20px;
-  font-size: 0.9rem;
-  background: #111;
-  color: #777;
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
 }
