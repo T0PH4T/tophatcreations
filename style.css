@@ -96,7 +96,17 @@ main {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 51, 51, 0.35);
+  box-shadow: 0 8px 20px rgba(255, 51, 51, 0.5);
+  filter: brightness(1.2);
+}
+
+/* Suggestions iframe wrapper for dark mode */
+.iframe-wrapper {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 /* Footer */
