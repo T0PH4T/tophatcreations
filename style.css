@@ -1,0 +1,79 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 60px 20px;
+  background: #111;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #ff3333;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Video */
+.video {
+  padding: 50px 20px;
+}
+
+iframe {
+  width: 90%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 10px;
+}
+
+/* Social links */
+.socials .links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  width: 240px;
+}
+
+.yt {
+  background: #ff0000;
+}
+
+.sp {
+  background: #1DB954;
+}
+
+/* About */
+.about {
+  padding: 40px 20px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  background: #111;
+  color: #777;
+}
