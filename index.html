@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tophat Creations</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,36 +10,56 @@
 
 <header>
   <h1>Tophat Creations</h1>
-  <p>Videos ✦ Rides ✦ Music</p>
+  <p>Videos • Rides • Music</p>
 </header>
 
-<section class="video">
-  <h2>Featured Video</h2>
-  <iframe
-    src="https://www.youtube.com/embed?listType=user_uploads&list=@TophatCreations"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</section>
+<nav class="tabs">
+  <button class="tab active" onclick="openTab('about', this)">About Me</button>
+  <button class="tab" onclick="openTab('tophat', this)">Tophat</button>
+  <button class="tab" onclick="openTab('rides', this)">Tophat Rides</button>
+  <button class="tab" onclick="openTab('music', this)">Discography</button>
+</nav>
 
-<section class="socials">
-  <h2>Connect & Follow</h2>
-  <div class="links">
-    <a class="btn yt" href="https://www.youtube.com/@TophatCreations" target="_blank">YouTube — Tophat Creations</a>
-    <a class="btn yt" href="https://www.youtube.com/@TophatRides" target="_blank">YouTube — Tophat Rides</a>
-    <a class="btn sp" href="https://open.spotify.com/artist/73tb2FoudiHF0ELMiRm17X" target="_blank">Spotify Music</a>
-  </div>
-</section>
+<main>
 
-<section class="about">
-  <h2>About</h2>
-  <p>Welcome to Tophat Creations — where vibes, rides, and sound collide.<br>
-  New videos, cool rides, and fresh tracks coming your way.</p>
-</section>
+  <section id="about" class="tab-content active">
+    <h2>About Me</h2>
+    <p>
+      Yo — I’m Tophat. I make YouTube videos, ride stuff fast, and produce music.
+      This site is the hub for everything I create.
+    </p>
+  </section>
+
+  <section id="tophat" class="tab-content">
+    <h2>Tophat</h2>
+    <iframe
+      src="https://www.youtube.com/embed?listType=user_uploads&list=@TophatCreations"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="rides" class="tab-content">
+    <h2>Tophat Rides</h2>
+    <iframe
+      src="https://www.youtube.com/embed?listType=user_uploads&list=@TophatRides"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="music" class="tab-content">
+    <h2>Discography</h2>
+    <iframe
+      src="https://open.spotify.com/embed/artist/73tb2FoudiHF0ELMiRm17X"
+      allow="encrypted-media">
+    </iframe>
+  </section>
+
+</main>
 
 <footer>
   <p>© 2026 Tophat Creations</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
