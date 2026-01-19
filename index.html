@@ -52,18 +52,17 @@
   <!-- SUGGESTIONS -->
   <section id="suggestions" class="tab-content">
     <h2>Suggestions</h2>
-    <p>Got ideas for videos, music, or rides? Let me know by filling out this form!</p>
-    <div class="iframe-wrapper">
-      <iframe 
-        src="https://forms.gle/Yine29PUeGgdRBtr7?embedded=true" 
-        width="100%" 
-        height="600" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0">
-      Loading…
-      </iframe>
-    </div>
+    <p>Got ideas for videos, music, or rides? Submit a suggestion and upvote/downvote others!</p>
+
+    <!-- Suggestion form -->
+    <form id="suggestionForm">
+      <input type="text" id="title" placeholder="Title" required><br>
+      <textarea id="desc" placeholder="Your suggestion..." rows="3" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Suggestions container -->
+    <div class="container" id="suggestionsContainer"></div>
   </section>
 </main>
 
