@@ -100,13 +100,53 @@ main {
   filter: brightness(1.2);
 }
 
-/* Suggestions iframe wrapper for dark mode */
-.iframe-wrapper {
+/* Suggestions tab */
+#suggestions .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#suggestions .card {
   background: #1a1a1a;
-  border-radius: 12px;
-  padding: 10px;
-  max-width: 800px;
-  margin: 20px auto;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#suggestions .card h3 {
+  margin-bottom: 0.5rem;
+}
+
+#suggestions .vote-btn {
+  cursor: pointer;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #eee;
+}
+
+#suggestions form input,
+#suggestions form textarea {
+  width: 80%;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#suggestions form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #ff3333;
+  color: #eee;
+  cursor: pointer;
 }
 
 /* Footer */
