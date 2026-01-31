@@ -3,101 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proxy Hub</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Tophat Creations</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f2f5;
+    /* Old CSS */
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
+
+    body {
+      font-family: Verdana, Geneva, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+
     header {
-      background-color: #4caf50;
-      color: white;
-      width: 100%;
-      padding: 25px 0;
+      background-color: #222222;
+      color: #ffffff;
+      padding: 20px;
       text-align: center;
       font-size: 2em;
-      font-weight: bold;
     }
-    main {
-      max-width: 800px;
-      width: 90%;
-      margin: 40px 0;
-      text-align: center;
-    }
-    .card-container {
+
+    nav {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
+      justify-content: center;
+      background-color: #333333;
     }
-    .card {
-      background: #fff;
-      padding: 20px 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    nav a {
+      color: #ffffff;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      width: 100%;
-      max-width: 400px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      transition: transform 0.15s, box-shadow 0.15s;
+      padding: 10px 20px;
+      display: block;
     }
-    .card i {
-      font-size: 2em;
-      color: #4caf50;
-      min-width: 40px;
-      text-align: center;
+
+    nav a:hover {
+      background-color: #555555;
     }
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
+
+    .section-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #222222;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      margin: 15px 0;
+      padding: 15px;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+    }
+
     footer {
-      margin-top: 50px;
-      color: #555;
-      font-size: 0.9em;
       text-align: center;
-      padding-bottom: 20px;
-    }
-    .note {
+      padding: 15px;
       margin-top: 30px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      color: #666666;
+    }
+
+    .note {
+      margin-top: 20px;
       font-style: italic;
-      color: #333;
     }
   </style>
 </head>
 <body>
-  <header>Proxy Hub</header>
-  <main>
-    <p>Click a browser to open:</p>
-    <div class="card-container">
-      <a class="card" href="https://jiyuu.dnsitalia.org/" target="_blank">
-        <i class="fas fa-globe"></i>
-        <span>Jiyuu Browser</span>
-      </a>
-      <a class="card" href="https://workstation.lhost.dev/" target="_blank">
-        <i class="fas fa-desktop"></i>
-        <span>Workstation Browser</span>
-      </a>
-      <a class="card" href="https://gointerstellar.app/" target="_blank">
-        <i class="fas fa-rocket"></i>
-        <span>Interstellar Browser</span>
-      </a>
-    </div>
+  <header>Tophat Creations</header>
 
-    <p class="note">I will update this list as often as I can.</p>
+  <nav>
+    <a href="#proxy-hub">Proxy Hub</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Proxy Hub Section -->
+    <section id="proxy-hub">
+      <div class="section-title">Proxy Hub</div>
+      <div class="card">
+        <a href="https://jiyuu.dnsitalia.org/" target="_blank">jiyuu.dnsitalia.org</a>
+      </div>
+      <div class="card">
+        <a href="https://workstation.lhost.dev/" target="_blank">workstation.lhost.dev</a>
+      </div>
+      <div class="card">
+        <a href="https://gointerstellar.app/" target="_blank">gointerstellar.app</a>
+      </div>
+      <div class="note">
+        I will update this list as often as I can.
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-title">About</div>
+      <p>Welcome to Tophat Creations. This site hosts resources, tools, and links for web users, including Proxy Hub — a collection of browser-within-browser sites for privacy and unblocked browsing.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-title">Contact</div>
+      <p>Email: <a href="mailto:tophat@example.com">tophat@example.com</a></p>
+      <p>Follow me on social media for updates!</p>
+    </section>
   </main>
+
   <footer>
-    &copy; 2026 Tophat Creations
+    © 2026 Tophat Creations
   </footer>
 </body>
 </html>
