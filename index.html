@@ -1,52 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tophat Hub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tophat Creations</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Tophat Hub</h1>
-    <nav>
-      <button class="tab-btn active" data-tab="youtube">YouTube</button>
-      <button class="tab-btn" data-tab="spotify">Spotify</button>
-      <button class="tab-btn" data-tab="proxy">Proxy Hub</button>
-    </nav>
-  </header>
 
-  <main>
-    <!-- YouTube Section -->
-    <section id="youtube" class="tab-content active">
-      <h2>YouTube</h2>
-      <p>Embed your favorite YouTube content here.</p>
-      <!-- Example embedded video -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-        title="YouTube video" frameborder="0" allowfullscreen></iframe>
-    </section>
+<header>
+  <h1>Tophat Creations</h1>
+  <p>Videos • Rides • Music</p>
+</header>
 
-    <!-- Spotify Section -->
-    <section id="spotify" class="tab-content">
-      <h2>Spotify</h2>
-      <p>Listen to music directly from Spotify.</p>
-      <!-- Example embedded Spotify playlist -->
-      <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="300" height="380" 
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </section>
+<nav class="tabs">
+  <button class="tab active" onclick="openTab('about', this)">🧑 About Me</button>
+  <button class="tab" onclick="openTab('tophat', this)">🎥 Tophat</button>
+  <button class="tab" onclick="openTab('rides', this)">🚴‍♂️ Tophat Rides</button>
+  <button class="tab" onclick="openTab('music', this)">🎵 Discography</button>
+  <button class="tab" onclick="openTab('suggestions', this)">💡 Suggestions</button>
+</nav>
 
-    <!-- Proxy Hub Section -->
-    <section id="proxy" class="tab-content">
-      <h2>Proxy Hub</h2>
-      <p>I will update this list as often as I can.</p>
-      <ul>
-        <li><a href="https://jiyuu.dnsitalia.org/" target="_blank">Jiyuu</a></li>
-        <li><a href="https://workstation.lhost.dev/" target="_blank">Workstation</a></li>
-        <li><a href="https://gointerstellar.app/" target="_blank">Go Interstellar</a></li>
-      </ul>
-    </section>
-  </main>
+<main>
+  <!-- ABOUT ME -->
+  <section id="about" class="tab-content active">
+    <h2>About Me</h2>
+    <p>I’m Tophat — a creator focused on videos, riding, and music. This site is a central hub for everything I make across platforms.</p>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- TOPHAT -->
+  <section id="tophat" class="tab-content">
+    <h2>Tophat</h2>
+    <p>My main YouTube channel. I post creative videos, experiments, and whatever else I feel like making.</p>
+    <a class="btn" href="https://www.youtube.com/@TophatCreations" target="_blank">Visit Tophat Creations</a>
+  </section>
+
+  <!-- TOPHAT RIDES -->
+  <section id="rides" class="tab-content">
+    <h2>Tophat Rides</h2>
+    <p>This channel is all about riding — e-bikes, speed, POVs, and pushing limits.</p>
+    <a class="btn" href="https://www.youtube.com/@TophatRides" target="_blank">Visit Tophat Rides</a>
+  </section>
+
+  <!-- DISCROGRAPHY -->
+  <section id="music" class="tab-content">
+    <h2>Discography</h2>
+    <p>My music releases, experiments, and sound projects. Available on Spotify and other platforms.</p>
+    <a class="btn" href="https://open.spotify.com/artist/73tb2FoudiHF0ELMiRm17X" target="_blank">Listen on Spotify</a>
+  </section>
+
+  <!-- SUGGESTIONS -->
+  <section id="suggestions" class="tab-content">
+    <h2>Suggestions</h2>
+    <p>Got ideas for videos, music, or rides? Let me know by filling out this form!</p>
+    <div class="iframe-wrapper">
+      <iframe 
+        src="https://forms.gle/Yine29PUeGgdRBtr7?embedded=true" 
+        width="100%" 
+        height="600" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+      Loading…</iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Tophat Creations</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
